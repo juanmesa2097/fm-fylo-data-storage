@@ -16,10 +16,10 @@
 ========================== */
 :root {
   --primary: linear-gradient(to right, #ffa399, #ff4d97);
-  --text-primary: hsl(243, 100%, 93%);
-  --text-secondary: hsl(229, 7%, 55%);
-  --element: hsl(228, 56%, 26%);
-  --background: hsl(229, 57%, 11%);
+  --text-primary: #dddbff;
+  --text-secondary: #848794;
+  --element: #1d2c67;
+  --background: #0c122c;
 }
 
 *,
@@ -48,6 +48,7 @@ body {
   text-size-adjust: 100%;
   margin: 0;
   background-color: var(--background);
+  color: var(--text-primary);
 }
 
 h1,
@@ -132,6 +133,10 @@ a:hover {
   text-align: right;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -171,4 +176,44 @@ a:hover {
   display: grid;
   place-items: center;
   border-radius: 8px;
+}
+
+.storage-info {
+  position: relative;
+}
+
+.popover {
+  padding: 1.5rem 2.3rem;
+  background: #fff;
+  color: var(--text-secondary);
+  position: absolute;
+  border-radius: 8px;
+  bottom: calc(100% + 1.4rem);
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+.popover .popover-main {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--background);
+  line-height: 1;
+  padding-right: 1rem;
+}
+
+.popover::after {
+  content: '';
+  background: transparent;
+  position: absolute;
+  border: solid 1.4rem transparent;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  right: 0;
+  top: calc(100% - 0.7rem);
 }

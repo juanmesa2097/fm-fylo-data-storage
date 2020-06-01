@@ -18,7 +18,7 @@
   --primary: linear-gradient(to right, #ffa399, #ff4d97);
   --text-primary: hsl(243, 100%, 93%);
   --text-secondary: hsl(229, 7%, 55%);
-  --elements: hsl(228, 56%, 26%);
+  --element: hsl(228, 56%, 26%);
   --background: hsl(229, 57%, 11%);
 }
 
@@ -139,7 +139,36 @@ a:hover {
   height: 100%;
 }
 
+.bg {
+  background-color: var(--background);
+}
+
 .section {
   position: relative;
   height: 100vh;
+}
+
+.card {
+  min-height: 10rem;
+  padding: 4rem;
+  background-color: var(--element);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card.primary {
+  border-top-right-radius: 100px;
+}
+
+.toolbar-item {
+  width: 4.4rem;
+  height: 4.4rem;
+  padding: 1rem;
+  background-color: var(--background);
+  margin-right: 1.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
 }

@@ -15,10 +15,8 @@
     [2] base styles
 ========================== */
 :root {
-  --primary: #9091dd;
-  --bg-primary: linear-gradient(to right, #ffa399, #ff4d97);
-
-  --text: hsl(243, 100%, 93%);
+  --primary: linear-gradient(to right, #ffa399, #ff4d97);
+  --text-primary: hsl(243, 100%, 93%);
   --text-secondary: hsl(229, 7%, 55%);
   --elements: hsl(228, 56%, 26%);
   --background: hsl(229, 57%, 11%);
@@ -49,6 +47,7 @@ body {
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
   margin: 0;
+  background-color: var(--background);
 }
 
 h1,
@@ -117,18 +116,30 @@ a:hover {
   color: #3974b8;
 }
 
+.text-primary {
+  color: var(--text-primary);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
 .text-left {
   text-align: left;
 }
-
 .text-center {
   text-align: center;
 }
-
 .text-right {
   text-align: right;
 }
 
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+
 .section {
   position: relative;
+  height: 100vh;
 }

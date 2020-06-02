@@ -274,3 +274,11 @@ a:hover {
   font-weight: 700;
   margin-top: 0.7rem;
 }
+
+.footer {
+  background: #0c0d0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}

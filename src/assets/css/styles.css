@@ -227,6 +227,15 @@ a:hover {
   display: grid;
   place-items: center;
   border-radius: 8px;
+  border: solid 1px transparent;
+  cursor: pointer;
+  outline: none;
+  transition: transform 400ms ease;
+}
+
+.toolbar-item:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
 }
 
 .storage-info {

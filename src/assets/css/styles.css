@@ -264,6 +264,7 @@ a:hover {
   .popover {
     bottom: calc(100% + 1.4rem);
     right: 0;
+    left: 60%;
     transform: translateX(0);
   }
 }
